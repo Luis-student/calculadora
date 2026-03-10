@@ -29,15 +29,18 @@ def calculadora(a, b, c):
 
     elif c == "/":
         return divisao(a, b) 
-    
+  
+while True: 
+    print("=====CALCULADORA=====")
+
+    num1 = int(input('insira o primeiro numero: '))
+    operacao = input("escolha a operação(+, -, *, /): ")
+    num2 = int(input('insira o segundo numero: '))
 
 
+    valor = calculadora(num1, num2, operacao)
+    print(valor)
 
-   
-
-
-
-
-
-    
-
+    sair = input("deseja continuar (sim/nao): ")
+    if sair == "nao":
+        break
